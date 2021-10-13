@@ -1,0 +1,12 @@
+[package]
+name = "proc-macro-false-positive"
+version = "0.1.0"
+edition = "2018"
+
+[workspace]
+members = ["foo-derive"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+foo-derive = { path = "foo-derive" }
