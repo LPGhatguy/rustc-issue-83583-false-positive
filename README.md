@@ -17,7 +17,7 @@ The lint works for this case, and a proc macro can add a `use super::*;` line to
 struct Outer {}
 
 mod generated {
-	use super::*;
+    use super::*;
 
     struct Dummy {
         inner: Outer,
@@ -32,7 +32,7 @@ fn item() {
     struct Inner {}
 
     mod generated {
-    	use super::*;
+        use super::*;
 
         struct Dummy {
             inner: Inner,
